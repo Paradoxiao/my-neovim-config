@@ -1,0 +1,119 @@
+{
+  "template": {
+    "prefix": "tt",
+    "body": "template<typename $1>\n$2",
+    "description": ""
+  },
+  "using": {
+    "prefix": "std",
+    "body": [
+      "#include<iostream>\nusing namespace std;"
+    ],
+    "description": ""
+  },
+  "class": {
+    "prefix": "aa",
+    "body": [
+      "class $1 {",
+      "private:",
+      "  $2",
+      "protected:",
+      "  $3",
+      "public:",
+      "  $4",
+      "};"
+    ],
+    "description": ""
+  },
+  "struct": {
+    "prefix": "ss",
+    "body": [
+      "struct $1 {",
+      "  $2",
+      "};"
+    ],
+    "description": ""
+  },
+  "sample main": {
+    "prefix": "main",
+    "body": [
+      "int main() { ",
+      "$0",
+      "return 0;",
+      "}"
+    ],
+    "description": ""
+  },
+  "cpp template": {
+    "prefix": "cc",
+    "body": [
+      "int main(){",
+      "  $1",
+      "  return 0;",
+      "}"
+    ],
+    "description": ""
+  },
+  "c template": {
+    "prefix": "ccc",
+    "body": [
+      "int main(){",
+      "    $1",
+      "    return 0;",
+      "}"
+    ],
+    "description": ""
+  },
+  "endless": {
+    "prefix": "wsc",
+    "body": [
+      "while(scanf(\"%$1\",&$2)!=EOF){\n$3",
+      "}"
+    ],
+    "description": ""
+  },
+  "while0": {
+    "prefix": "wscc",
+    "body": [
+      "while(1){",
+      "scanf(\"%$1\",&$2);",
+      "if($3==0)break;\n$4",
+      "}"
+    ],
+    "description": ""
+  },
+  "for true": {
+    "prefix": "for;;",
+    "body": [
+      "for(;;){",
+      "$1",
+      "}"
+    ]
+  },
+  "while true": {
+    "prefix": "whilet",
+    "body": [
+      "while(1){",
+      "$1",
+      "}"
+    ]
+  },
+  "freopen in": {
+    "prefix": "fff",
+    "body": "freopen(\"in.txt\",\"r\",stdin);"
+  },
+  "freopen out": {
+    "prefix": "ffff",
+    "body": "freopen(\"out.txt\",\"w\",stdout);"
+  },
+  "OJ": {
+    "prefix": "ff",
+    "body": [
+      "#ifndef ONLINE_JUDGE",
+      "freopen(\"input.txt\", \"r\", stdin);",
+      "freopen(\"output.txt\", \"w\", stdout);",
+      "#endif // ONLINE_JUDGE"
+    ],
+    "description": ""
+  }
+}
