@@ -1,5 +1,7 @@
 return {
   "saghen/blink.cmp",
+  ---@module "blink.cmp"
+  ---@type blink.cmp.Config
   opts = {
     -- 'default' (recommended) for mappings similar to built-in completions (C-y to accept)
     -- 'super-tab' for mappings similar to vscode (tab to accept)
@@ -14,5 +16,12 @@ return {
     --
     -- See :h blink-cmp-config-keymap for defining your own keymap
     keymap = { preset = "enter" },
+    completion = {
+      list = {
+        selection = {
+          auto_insert = false,
+        },
+      },
+    },
   },
 }
