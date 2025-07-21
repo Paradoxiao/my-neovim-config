@@ -1,0 +1,11 @@
+{
+  "sample main": {
+    "prefix": "rr",
+    "body": [
+      "fn main() {",
+      "$1",
+      "}"
+    ],
+    "description": ""
+  }
+}
