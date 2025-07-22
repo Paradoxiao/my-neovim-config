@@ -1,4 +1,17 @@
 {
+  "IO": {
+    "prefix": "io",
+    "body": [
+      "\n/*\n",
+      "Sample Input:",
+      "$1",
+      "Sample Output:",
+      "$2",
+      "HINT\n",
+      "*/\n"
+    ],
+    "description": ""
+  },
   "end line": {
     "prefix": "ll",
     "body": "<<endl",
