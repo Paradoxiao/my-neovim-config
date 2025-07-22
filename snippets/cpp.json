@@ -1,4 +1,9 @@
 {
+  "end line": {
+    "prefix": "ll",
+    "body": "<<endl",
+    "description": ""
+  },
   "template": {
     "prefix": "tt",
     "body": "template<typename $1>\n$2",
