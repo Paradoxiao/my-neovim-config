@@ -1,4 +1,9 @@
 {
+  "unsigned long long": {
+    "prefix": "ull",
+    "body": "unsigned long long ",
+    "description": ""
+  },
   "IO": {
     "prefix": "io",
     "body": [
