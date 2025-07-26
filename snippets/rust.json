@@ -1,0 +1,35 @@
+{
+  "sample main": {
+    "prefix": "rr",
+    "body": [
+      "fn main() {",
+      "$1",
+      "}"
+    ],
+    "description": ""
+  },
+  "struct": {
+    "prefix": "ss",
+    "body": [
+      "struct $1 {",
+      "$2",
+      "}"
+    ]
+  },
+  "enum": {
+    "prefix": "ee",
+    "body": [
+      "enum $1 {",
+      "$2",
+      "}"
+    ]
+  },
+  "match": {
+    "prefix": "mm",
+    "body": [
+      "match $1 {",
+      "$2",
+      "}"
+    ]
+  }
+}
