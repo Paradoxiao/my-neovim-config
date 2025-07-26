@@ -29,13 +29,17 @@
   },
   "template": {
     "prefix": "tt",
-    "body": "template<typename $1>\n$2",
+    "body": [
+      "template<typename $1>",
+      "$2"
+    ],
     "description": ""
   },
   "using": {
     "prefix": "std",
     "body": [
-      "#include<iostream>\nusing namespace std;"
+      "#include<iostream>\n",
+      "using namespace std;\n"
     ],
     "description": ""
   },
@@ -49,7 +53,7 @@
       "  $3",
       "public:",
       "  $4",
-      "};"
+      "};\n"
     ],
     "description": ""
   },
@@ -58,73 +62,19 @@
     "body": [
       "struct $1 {",
       "  $2",
-      "};"
+      "};\n"
     ],
     "description": ""
   },
-  "sample main": {
-    "prefix": "main",
-    "body": [
-      "int main() { ",
-      "$0",
-      "return 0;",
-      "}"
-    ],
-    "description": ""
-  },
-  "cpp template": {
+  "main": {
     "prefix": "cc",
     "body": [
       "int main(){",
       "  $1",
       "  return 0;",
-      "}"
+      "}\n"
     ],
     "description": ""
-  },
-  "c template": {
-    "prefix": "ccc",
-    "body": [
-      "int main(){",
-      "    $1",
-      "    return 0;",
-      "}"
-    ],
-    "description": ""
-  },
-  "endless": {
-    "prefix": "wsc",
-    "body": [
-      "while(scanf(\"%$1\",&$2)!=EOF){\n$3",
-      "}"
-    ],
-    "description": ""
-  },
-  "while0": {
-    "prefix": "wscc",
-    "body": [
-      "while(1){",
-      "scanf(\"%$1\",&$2);",
-      "if($3==0)break;\n$4",
-      "}"
-    ],
-    "description": ""
-  },
-  "for true": {
-    "prefix": "for;;",
-    "body": [
-      "for(;;){",
-      "$1",
-      "}"
-    ]
-  },
-  "while true": {
-    "prefix": "whilet",
-    "body": [
-      "while(1){",
-      "$1",
-      "}"
-    ]
   },
   "speed up": {
     "prefix": "ff",
