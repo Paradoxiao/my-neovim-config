@@ -18,6 +18,9 @@ end, { desc = "terminal (cwd)" })
 map("n", "<C-,>", 'diwi"<<<<"<left><left><left>')
 map("n", "<A-x>", "<cmd>Copilot disable<cr>")
 map("n", "<A-X>", "<cmd>Copilot enable<cr>")
+map("n", "<leader>se", function()
+  Snacks.picker.icons()
+end, { desc = "Icons" })
 
 --插入模式
 map("i", "<C-,>", '<esc>diwi"<<<<"<left><left><left>')
