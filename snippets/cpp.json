@@ -4,6 +4,11 @@
     "body": "unsigned long long ",
     "description": ""
   },
+  "long long": {
+    "prefix": "ll",
+    "body": "long long ",
+    "description": ""
+  },
   "IO": {
     "prefix": "io",
     "body": [
@@ -18,8 +23,8 @@
     "description": ""
   },
   "end line": {
-    "prefix": "ll",
-    "body": "<<endl",
+    "prefix": "ee",
+    "body": "<< endl",
     "description": ""
   },
   "template": {
