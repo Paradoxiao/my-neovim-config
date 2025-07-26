@@ -6,7 +6,7 @@ return {
         enabled = false,
       },
       filetypes = {
-        ["*"] = false,
+        ["cpp"] = false,
       },
     },
   },
