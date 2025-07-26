@@ -1,13 +1,44 @@
 {
-  "template": {
-    "prefix": "tt",
-    "body": "template<typename $1>\n$2",
+  "stdio": {
+    "prefix": "pp",
+    "body": [
+      "#include<iostream>",
+      "using namespace std;\n\n"
+    ]
+  },
+  "unsigned long long": {
+    "prefix": "ull",
+    "body": "unsigned long long ",
     "description": ""
   },
-  "using": {
-    "prefix": "std",
+  "long long": {
+    "prefix": "ll",
+    "body": "long long ",
+    "description": ""
+  },
+  "IO": {
+    "prefix": "io",
     "body": [
-      "#include<iostream>\nusing namespace std;"
+      "\n/*\n",
+      "Sample Input:",
+      "$1",
+      "Sample Output:",
+      "$2",
+      "HINT\n",
+      "*/\n"
+    ],
+    "description": ""
+  },
+  "end line": {
+    "prefix": "ee",
+    "body": "<< endl",
+    "description": ""
+  },
+  "template": {
+    "prefix": "tt",
+    "body": [
+      "template<typename $1>",
+      "$2"
     ],
     "description": ""
   },
@@ -34,17 +65,7 @@
     ],
     "description": ""
   },
-  "sample main": {
-    "prefix": "main",
-    "body": [
-      "int main() { ",
-      "$0",
-      "return 0;",
-      "}"
-    ],
-    "description": ""
-  },
-  "cpp template": {
+  "main": {
     "prefix": "cc",
     "body": [
       "int main(){",
@@ -54,65 +75,34 @@
     ],
     "description": ""
   },
-  "c template": {
-    "prefix": "ccc",
+  "Solve": {
+    "prefix": "FF",
     "body": [
+      "#include<iostream>",
+      "using namespace std;\n",
+      "void solve() {",
+      "  $1",
+      "}\n",
       "int main(){",
-      "    $1",
-      "    return 0;",
-      "}"
-    ],
-    "description": ""
-  },
-  "endless": {
-    "prefix": "wsc",
-    "body": [
-      "while(scanf(\"%$1\",&$2)!=EOF){\n$3",
-      "}"
-    ],
-    "description": ""
-  },
-  "while0": {
-    "prefix": "wscc",
-    "body": [
-      "while(1){",
-      "scanf(\"%$1\",&$2);",
-      "if($3==0)break;\n$4",
-      "}"
-    ],
-    "description": ""
-  },
-  "for true": {
-    "prefix": "for;;",
-    "body": [
-      "for(;;){",
-      "$1",
+      "  ios::sync_with_stdio(false),cin.tie(nullptr),cout.tie(nullptr);",
+      "  int t;",
+      "  cin >> t;",
+      "  while (t--)",
+      "    solve();",
+      "  return 0;",
       "}"
     ]
   },
-  "while true": {
-    "prefix": "whilet",
-    "body": [
-      "while(1){",
-      "$1",
-      "}"
-    ]
-  },
-  "freopen in": {
-    "prefix": "fff",
-    "body": "freopen(\"in.txt\",\"r\",stdin);"
-  },
-  "freopen out": {
-    "prefix": "ffff",
-    "body": "freopen(\"out.txt\",\"w\",stdout);"
-  },
-  "OJ": {
+  "solve": {
     "prefix": "ff",
     "body": [
-      "#ifndef ONLINE_JUDGE",
-      "freopen(\"input.txt\", \"r\", stdin);",
-      "freopen(\"output.txt\", \"w\", stdout);",
-      "#endif // ONLINE_JUDGE"
+      "#include<iostream>",
+      "using namespace std;\n",
+      "int main(){",
+      "  ios::sync_with_stdio(false),cin.tie(nullptr),cout.tie(nullptr);",
+      "  $1",
+      "  return 0;",
+      "}"
     ],
     "description": ""
   }

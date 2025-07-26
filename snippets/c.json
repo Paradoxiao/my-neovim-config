@@ -1,20 +1,10 @@
 {
   "struct": {
-    "prefix": "str",
+    "prefix": "ss",
     "body": [
       "struct $0 {",
       "  $1",
       "};"
-    ],
-    "description": ""
-  },
-  "sample main": {
-    "prefix": "main",
-    "body": [
-      "int main() { ",
-      "$0",
-      "return 0;",
-      "}"
     ],
     "description": ""
   },
@@ -25,58 +15,6 @@
       "  $1",
       "  return 0;",
       "}"
-    ],
-    "description": ""
-  },
-  "whileeof": {
-    "prefix": "wsc",
-    "body": [
-      "while(scanf(\"%$1\",&$2)!=EOF){\n$3",
-      "}"
-    ],
-    "description": ""
-  },
-  "while0": {
-    "prefix": "wscc",
-    "body": [
-      "while(1){",
-      "scanf(\"%$1\",&$2);",
-      "if($3==0)break;\n$4",
-      "}"
-    ],
-    "description": ""
-  },
-  "for true": {
-    "prefix": "for;;",
-    "body": [
-      "for(;;){",
-      "$1",
-      "}"
-    ]
-  },
-  "while true": {
-    "prefix": "whilet",
-    "body": [
-      "while(1){",
-      "$1",
-      "}"
-    ]
-  },
-  "freopen in": {
-    "prefix": "fff",
-    "body": "freopen(\"in.txt\",\"r\",stdin);"
-  },
-  "freopen out": {
-    "prefix": "ffff",
-    "body": "freopen(\"out.txt\",\"w\",stdout);"
-  },
-  "OJ": {
-    "prefix": "ff",
-    "body": [
-      "#ifndef ONLINE_JUDGE",
-      "freopen(\"input.txt\", \"r\", stdin);",
-      "freopen(\"output.txt\", \"w\", stdout);",
-      "#endif // ONLINE_JUDGE"
     ],
     "description": ""
   }
