@@ -5,9 +5,9 @@ return {
       go_back = function(state)
         require("neo-tree.sources.common.commands").close_all_subnodes(state)
         require("neo-tree.sources.filesystem.commands").navigate_up(state)
-      end
+      end,
     },
-    window = { position = "left", },
+    window = { position = "left" },
     filesystem = {
       window = {
         mappings = {
@@ -15,7 +15,7 @@ return {
           ["<right>"] = "set_root",
         },
       },
-      filtered_items = { visible = true, },
+      -- filtered_items = { visible = true, },
     },
-  }
+  },
 }
