@@ -1,6 +1,6 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
-  config = {
+  opts = {
     commands = {
       go_back = function(state)
         require("neo-tree.sources.common.commands").close_all_subnodes(state)
