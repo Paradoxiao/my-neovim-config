@@ -28,6 +28,6 @@ Mutually.Assured.Destruction.Mechanised.Area.Nulliffier
         },
       },
     },
+    image = {},
   },
 }
-
