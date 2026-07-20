@@ -1,0 +1,20 @@
+{
+  "sample main": {
+    "prefix": "gg",
+    "body": [
+      "func main() {",
+      "  $1",
+      "}"
+    ],
+    "description": ""
+  },
+  "sample func": {
+    "prefix": "ff",
+    "body": [
+      "func $1($2) $3 {",
+      "  $4",
+      "}"
+    ],
+    "description": ""
+  }
+}

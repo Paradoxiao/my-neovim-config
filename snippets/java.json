@@ -1,0 +1,52 @@
+{
+  "class": {
+    "prefix": "cc",
+    "body": [
+      "class $1 {",
+      "  $2",
+      "}"
+    ]
+  },
+  "main": {
+    "prefix": "jj",
+    "body": [
+      "import java.util.*;",
+      "class Main {",
+      "  public static void main(String[] args) {",
+      "    Scanner scanner = new Scanner(System.in);",
+      "    $1",
+      "    scanner.close();",
+      "  }",
+      "}"
+    ],
+    "description": ""
+  },
+  "scanner": {
+    "prefix": "sf",
+    "body": [
+      "Scanner scanner = new Scanner(System.in);"
+    ],
+    "description": ""
+  },
+  "print": {
+    "prefix": "print",
+    "body": [
+      "System.out.print($1);"
+    ],
+    "description": ""
+  },
+  "println": {
+    "prefix": "println",
+    "body": [
+      "System.out.println($1);"
+    ],
+    "description": ""
+  },
+  "printf": {
+    "prefix": "printf",
+    "body": [
+      "System.out.printf($1);"
+    ],
+    "description": ""
+  }
+}

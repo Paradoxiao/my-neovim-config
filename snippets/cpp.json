@@ -11,11 +11,6 @@
     "body": "unsigned long long ",
     "description": ""
   },
-  "long long": {
-    "prefix": "ll",
-    "body": "long long ",
-    "description": ""
-  },
   "IO": {
     "prefix": "io",
     "body": [
@@ -78,7 +73,9 @@
   "Solve": {
     "prefix": "FF",
     "body": [
-      "#include<iostream>",
+      "#include<bits/stdc++.h>",
+      "using ll = long long;",
+      "const int MOD = 1e9 + 7;",
       "using namespace std;\n",
       "void solve() {",
       "  $1",
@@ -96,7 +93,9 @@
   "solve": {
     "prefix": "ff",
     "body": [
-      "#include<iostream>",
+      "#include<bits/stdc++.h>",
+      "using ll = long long;",
+      "const int MOD = 1e9 + 7;",
       "using namespace std;\n",
       "void solve() {",
       "  $1",
