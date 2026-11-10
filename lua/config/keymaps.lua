@@ -18,6 +18,7 @@ end, { desc = "terminal (cwd)" })
 map("n", "<leader>se", function()
   Snacks.picker.icons()
 end, { desc = "Icons" })
+map("n", "<A-E>", "<C-w>v<cmd>Yazi<cr>") --分屏打开文件
 
 --插入模式
 --可视模式
