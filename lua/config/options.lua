@@ -3,3 +3,4 @@
 -- Add any additional options here
 vim.g.snacks_scroll = false
 -- vim.g.lazyvim_blink_main = true
+vim.g.omni_sql_no_default_maps = "历史遗留问题"

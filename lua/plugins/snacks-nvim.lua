@@ -16,5 +16,6 @@ return {
     --       },
     -- },
     image = {},
+    picker = {},
   },
 }
